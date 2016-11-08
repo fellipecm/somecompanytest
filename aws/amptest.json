@@ -1,5 +1,5 @@
 {
-    "AWSTemplateFormatVersion":"2016-11-08",
+    "AWSTemplateFormatVersion":"2010-09-09",
     "Description":"AMP Test CF Script",
     "Metadata":{
         "CentosAMIVersion":"1602, released 02/26/2016",
@@ -7,7 +7,7 @@
     },
     "Parameters":{
         "SSHKeyName":{
-            "Description":"amptest",
+            "Description":"Key Name",
             "Type":"String"
         }
     },
@@ -106,23 +106,25 @@
                                 " - CFNSTATUS=$?\n",
                                 " - /usr/bin/cfn-signal ",
                                 "         --exit-code $CFNSTATUS ",
-                                "         --data \"$( base64 -w 0 /tmp/custom-output.txt )\" ",
+                                "         --data \"$( base64 -w 0 /tmp/custom-output.txt )\" \n",
+                                " - yum install -y wget\n",
+                                " - wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm\n",
+                                " - rpm -ivh epel-release-7-8.noarch.rpm\n",
+                                " - rm -f epel-release-7-8.noarch.rpm\n",
+                                " - yum install -y git make ruby ruby-devel gcc zlib-devel\n",
+                                " - gem install --no-rdoc --no-ri puppet\n",
+                                " - /usr/local/bin/puppet module install puppetlabs/vcsrepo\n",
+                                " - /usr/local/bin/puppet module install maestrodev/rvm\n",
+                                " - git clone https://github.com/fellipecm/somecompanytest.git\n",
+                                " - cp somecompanytest/puppet/site.pp /home/centos/site.pp\n",
+                                " - cp somecompanytest/puppet/hiera.yaml /etc/puppetlabs/puppet/hiera.yaml\n",
+                                " - /usr/local/bin/puppet apply site.pp\n",
                                 "'",
                                 {
                                     "Ref":"WaitConditionHandle"
                                 },
                                 "'",
-                                " 2>&1 >> /var/log/initial_user-data.log\n",
-                                "yum install -y wget\n",
-                                "wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm\n",
-                                "rpm -ivh epel-release-7-8.noarch.rpm\n",
-                                "rm -y epel-release-7-8.noarch.rpm\n",
-                                "yum install -y make ruby ruby-devel gcc zlib-devel\n",
-                                "gem install --no-rdoc --no-ri puppet\n",
-                                "/usr/local/bin/puppet module install puppetlabs/vcsrepo\n",
-                                "/usr/local/bin/puppet module install maestrodev/rvm\n",
-                                "",
-
+                                " 2>&1 >> /var/log/initial_user-data.log\n"
                             ]
                         ]
                     }
@@ -139,7 +141,7 @@
                 "Handle":{
                     "Ref":"WaitConditionHandle"
                 },
-                "Timeout":"300"
+                "Timeout":"600"
             }
         }
     },

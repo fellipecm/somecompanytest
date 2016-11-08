@@ -22,9 +22,9 @@ exec { 'rake_install_gem':
 }
 
 # install git package - used by vcsrepo
-#package { 'git':
-#    ensure => installed,
-#}
+package { 'git':
+    ensure => installed,
+}
 
 # install nodejs package used by rake
 package { 'nodejs':
@@ -36,7 +36,7 @@ vcsrepo { "/home/centos/webapp-demo":
     ensure   => latest,
     provider => git,
     require  => [ Package["git"] ],
-    source   => "https://github.com/alexharv074/webapp-demo.git",
+    source   => "https://github.com/fellipecm/webapp-demo.git",
     revision => 'master',
 }
 
