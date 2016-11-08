@@ -1,0 +1,9 @@
+rvm::system_rubies:
+  'ruby-2.2.2':
+    default_use: true
+
+#rvm::rvm_gems:
+#  'bundler':
+#    name: 'bundler'
+#    ruby_version: 'ruby-2.2.2'
+#    ensure: latest
