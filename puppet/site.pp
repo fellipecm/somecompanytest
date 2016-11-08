@@ -40,14 +40,28 @@ vcsrepo { "/home/centos/webapp-demo":
     revision => 'master',
 }
 
+# install deps start
+package { 'sqlite-devel':
+    ensure  => installed,
+}
+
+package { 'gcc':
+    ensure  => installed,
+}
+
+package { 'zlib-devel':
+    ensure  => installed,
+}
+# deps install end here
+
 # bundle install
 exec { "app-install":
     #user    => centos,
     path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
     cwd     => "/home/centos/webapp-demo",
     command => "bundle install",
+    require  => [ Package["git"], Package["gcc"], Package["zlib-devel"], File["/home/centos/webapp-demo"]  ],
     # TODO: unless
-    # require => File["/home/centos/webapp-demo"],
 }
 
 # execute rake db:migrate if needed
