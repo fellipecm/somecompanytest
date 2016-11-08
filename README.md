@@ -30,37 +30,37 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 ## Utilization
 1. On AWS Console open CloudFormation (CF)
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
 
 2. Select Create Stack
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use02.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use02.png)
 
 3. On the option "Upload a template Amazon to S3" click browse and select the file you downloaded as a Pre-requisite
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use03.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use03.png)
 
 4. Type a name for your Stack
 
 5. On SSHKeyName type the Key Pair name you created as a Pre-requisite
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use04.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use04.png)
 
 6. Click Next twice
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use05.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use05.png)
 
 7. Click Create
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use06.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use06.png)
 
 8. Wait for it to get the "COMPLETE" status
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use07.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use07.png)
 
 9. Get the application URL at Outputs
 
-![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
 
 ## References
 ### Sample code:
