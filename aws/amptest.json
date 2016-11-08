@@ -135,7 +135,7 @@
                 "Handle":{
                     "Ref":"WaitConditionHandle"
                 },
-                "Timeout":"360"
+                "Timeout":"600"
             }
         }
     },

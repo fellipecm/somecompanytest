@@ -3,8 +3,9 @@
 This a sample of an Ruby Rails environment creation and deploy using AWS CloudFormation and Puppet on CentOS.
 
 ## Pre-requisites
-* AWS:
+### AWS:
 1. Create an AWS Key Pair [reference](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+
   1.1 On AWS Console, on Compute, select EC2
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs01.png)
@@ -23,7 +24,7 @@ This a sample of an Ruby Rails environment creation and deploy using AWS CloudFo
 
 2. Download the CF file [here](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/aws/amptest.json)
 
-* Sample code:
+### Sample code:
 You may optionally fork the code from [here](https://github.com/fellipecm/webapp-demo/) and change the git clone at app-clone on puppet/site.pp
 
 ## Utilization
@@ -62,12 +63,17 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
 
 ## References
-Sample code: https://github.com/alexharv074/webapp-demo
-App testing and initial env setup (before Puppet):
+### Sample code:
+
+https://github.com/alexharv074/webapp-demo
+
+### App testing and initial env setup (before Puppet):
+
 https://rvm.io/
 https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/aws/nginx/oss/install_language_runtime.html
 
-Puppet:
+### Puppet:
+
 http://crohr.me/journal/2012/who-said-puppet-was-hard.html
 https://forge.puppet.com/maestrodev/rvm
 https://blog.csanchez.org/2014/01/14/installing-rvm-and-multiple-ruby-versions-with-puppet/
@@ -76,12 +82,14 @@ http://stackoverflow.com/questions/1349047/show-pending-migrations-in-rails
 https://phaseshiftllc.com/articles/2012/03/19/setting-up-vagrant-with-rvm-and-mysql-for-rails-development.html
 http://jsonlint.com/
 
-Issues and trobleshooting:
+### Issues and trobleshooting:
+
 https://github.com/flapjack/omnibus-flapjack/issues/72
 https://ask.puppet.com/question/2177/how-to-execute-source-command/
 
-CloudFormation:
-CentOS 7 Base Template: https://gist.github.com/gene1wood/a00d0b9d029f40e866df
-Insights: https://github.com/Accenture/adop-docker-compose
+### CloudFormation:
+
+https://gist.github.com/gene1wood/a00d0b9d029f40e866df
+https://github.com/Accenture/adop-docker-compose
 
 README:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

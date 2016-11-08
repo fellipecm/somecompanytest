@@ -60,7 +60,7 @@ exec { "app-install":
     path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
     cwd     => "/home/centos/webapp-demo",
     command => "bundle install",
-    require  => [ Package["git"], Package["gcc"], Package["zlib-devel"], File["/home/centos/webapp-demo"]  ],
+    require  => [ Package["git"], Package["gcc"], Package["zlib-devel"] ],
     # TODO: unless
 }
 
