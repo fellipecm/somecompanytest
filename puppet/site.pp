@@ -71,7 +71,7 @@ exec { "set-env":
     cwd     => "/home/centos/webapp-demo",
     command => "bundle exec rake db:migrate RAILS_ENV=development",
     unless  => "bundle exec rake db:abort_if_pending_migrations",
-    # require => File["/home/centos/webapp-demo"],
+    require => Exec["app-install"],
 }
 
 # start the app in background mode
@@ -80,6 +80,6 @@ exec { "start-env":
     path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
     cwd     => "/home/centos/webapp-demo",
     command => "/usr/bin/nohup bundle exec rails server -b 0.0.0.0 -p 3000 > webapp-demo.out 2>&1 &",
+    require => Exec["set-env"],
     # TODO: unless
-    # require => File["/home/centos/webapp-demo"],
 }

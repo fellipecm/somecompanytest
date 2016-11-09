@@ -82,11 +82,6 @@ http://stackoverflow.com/questions/1349047/show-pending-migrations-in-rails
 https://phaseshiftllc.com/articles/2012/03/19/setting-up-vagrant-with-rvm-and-mysql-for-rails-development.html
 http://jsonlint.com/
 
-### Issues and trobleshooting:
-
-https://github.com/flapjack/omnibus-flapjack/issues/72
-https://ask.puppet.com/question/2177/how-to-execute-source-command/
-
 ### CloudFormation:
 
 https://gist.github.com/gene1wood/a00d0b9d029f40e866df
@@ -95,3 +90,9 @@ https://github.com/Accenture/adop-docker-compose
 ###README:
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+### Issues and trobleshooting:
+
+https://github.com/flapjack/omnibus-flapjack/issues/72
+https://ask.puppet.com/question/2177/how-to-execute-source-command/
+http://stackoverflow.com/questions/23287357/already-activated-rake-version-different-than-what-gemfile-requires-prevents-rak

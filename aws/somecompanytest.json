@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion":"2010-09-09",
-    "Description":"AMP Test CF Script",
+    "Description":"Some company test CF script",
     "Metadata":{
         "CentosAMIVersion":"1602, released 02/26/2016",
         "CentosURL":"https://wiki.centos.org/Cloud/AWS"
@@ -72,6 +72,7 @@
             "Metadata":{
                 "UserDataComment1":"The cloud-config script is delivered directly in user_data because the CentOS 7 base AMIs run cloud-init automatically, looking for a cloud-init config in user_data",
                 "UserDataComment2":"In this example the 'dmidecode' command is run and the output is sent back to the WaitConditionHandle which is then passed out through the CloudFormation outputs",
+                "UserDataComment3":"Added code to 'bootstrap' puppet and its modules",
                 "ImageIdComment":"The AMIs in the RegionMap are AMIs published by Centos.org. They can be found here : https://aws.amazon.com/marketplace/pp/B00O7WM7QW"
             },
             "Properties":{
