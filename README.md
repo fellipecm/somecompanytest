@@ -80,6 +80,7 @@ https://blog.csanchez.org/2014/01/14/installing-rvm-and-multiple-ruby-versions-w
 http://livecipher.blogspot.com.au/2013/01/deploy-code-from-git-using-puppet.html
 http://stackoverflow.com/questions/1349047/show-pending-migrations-in-rails
 https://phaseshiftllc.com/articles/2012/03/19/setting-up-vagrant-with-rvm-and-mysql-for-rails-development.html
+https://mikewilliamson.wordpress.com/2015/08/26/running-a-rails-app-with-systemd-and-liking-it/
 http://jsonlint.com/
 
 ### CloudFormation:

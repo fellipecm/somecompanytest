@@ -112,6 +112,7 @@
                                 "cp somecompanytest/puppet/site.pp /home/centos/site.pp\n",
                                 "mkdir -p /etc/puppetlabs/puppet/\n",
                                 "cp somecompanytest/puppet/hiera.yaml /etc/puppetlabs/puppet/hiera.yaml\n",
+                                "cp somecompanytest/scripts/webapp.service /usr/lib/systemd/system/webapp.service\n",
                                 "cd /home/centos/\n",
                                 "/usr/local/bin/puppet apply site.pp\n",
                                 "'",

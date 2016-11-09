@@ -74,12 +74,18 @@ exec { "set-env":
     require => Exec["app-install"],
 }
 
-# start the app in background mode
-exec { "start-env":
-    #user    => centos,
-    path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
-    cwd     => "/home/centos/webapp-demo",
-    command => "/usr/bin/nohup bundle exec rails server -b 0.0.0.0 -p 3000 > webapp-demo.out 2>&1 &",
-    require => Exec["set-env"],
-    # TODO: unless
+service { 'webapp':
+  enable => true,
+  ensure => 'running',
+  require => Exec["set-env"],
 }
+
+# start the app in background mode
+#exec { "start-env":
+#    #user    => centos,
+#    path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
+#    cwd     => "/home/centos/webapp-demo",
+#    command => "/usr/bin/nohup bundle exec rails server -b 0.0.0.0 -p 3000 > webapp-demo.out 2>&1 &",
+#    require => Exec["set-env"],
+#    # TODO: unless
+#}
