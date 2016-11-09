@@ -4,7 +4,7 @@ This a sample of an Ruby Rails environment creation and deploy using AWS CloudFo
 
 ## Pre-requisites
 ### AWS:
-1. Create an AWS Key Pair [reference](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+1. Create an AWS Key Pair
 
   1.1 On AWS Console, on Compute, select EC2
 
@@ -92,4 +92,6 @@ https://ask.puppet.com/question/2177/how-to-execute-source-command/
 https://gist.github.com/gene1wood/a00d0b9d029f40e866df
 https://github.com/Accenture/adop-docker-compose
 
-README:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+###README:
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
