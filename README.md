@@ -6,7 +6,7 @@ This a sample of an Ruby Rails environment creation and sample application deplo
 ### AWS:
 1. Create an AWS Key Pair
 
-  1.1 On AWS Console, on Compute, select EC2
+  1.1 Open AWS Console and select select EC2 on Compute category
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs01.png)
 
@@ -14,11 +14,11 @@ This a sample of an Ruby Rails environment creation and sample application deplo
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs02.png)
 
-  1.3 At the top of the page, click on "Create Key Pair"
+  1.3 At the top of the page, click on "Create Key Pair" button
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs03.png)
 
-  1.4 Git it a name and click on "Create"
+  1.4 Give it a name and click on "Create" button
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs04.png)
 
@@ -30,33 +30,33 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 ## Utilization
 ### Bring up the server:
 
-1. On AWS Console open CloudFormation (CF)
+1. On AWS Console and select CloudFormation (CF) on "Management Tools" category
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
 
-2. Select Create Stack
+2. Click on "Create Stack" button
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use02.png)
 
-3. On the option "Upload a template Amazon to S3" click browse and select the file you downloaded as a Pre-requisite
+3. On the option "Upload a template Amazon to S3" click on "Browse..." button and select the file you downloaded as a pre-requisite
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use03.png)
 
 4. Type a name for your Stack
 
-5. On SSHKeyName type the Key Pair name you created as a Pre-requisite
+5. On SSHKeyName type the Key Pair name you created as a pre-requisite
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use04.png)
 
-6. Click Next twice
+6. Click on Next button twice
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use05.png)
 
-7. Click Create
+7. Click on Create button
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use06.png)
 
-8. Wait for it to get the "COMPLETE" status
+8. Wait for it to get the "CREATE_COMPLETE" status
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use07.png)
 
