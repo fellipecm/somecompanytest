@@ -1,7 +1,5 @@
 [Unit]
 Description=webapp-demo
-Requires=network.target
-Requires=arangodb.service
 
 [Service]
 Type=simple
