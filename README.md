@@ -60,9 +60,16 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use07.png)
 
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
+
 9. Get the application URL at Outputs
 
-   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use09.png)
+
+10. Check the page
+
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use10.png)
+
 
 ### Delete the server:
 
@@ -70,11 +77,11 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
 
-2. Select the stack you have created
+2. Select the stack you have created and click on Actions > Delete Stack
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/delete01.png)
 
-3. Select the stack you have created
+3. Click on "Yes, Delete" and wait for it to be deleted
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/delete02.png)
 

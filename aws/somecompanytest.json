@@ -71,8 +71,7 @@
             "Type":"AWS::EC2::Instance",
             "Metadata":{
                 "UserDataComment1":"The cloud-config script is delivered directly in user_data because the CentOS 7 base AMIs run cloud-init automatically, looking for a cloud-init config in user_data",
-                "UserDataComment2":"In this example the 'dmidecode' command is run and the output is sent back to the WaitConditionHandle which is then passed out through the CloudFormation outputs",
-                "UserDataComment3":"Added code to 'bootstrap' puppet and its modules",
+                "UserDataComment2":"Added code to 'bootstrap' puppet and its modules",
                 "ImageIdComment":"The AMIs in the RegionMap are AMIs published by Centos.org. They can be found here : https://aws.amazon.com/marketplace/pp/B00O7WM7QW"
             },
             "Properties":{
@@ -114,12 +113,7 @@
                                 "cp somecompanytest/puppet/hiera.yaml /etc/puppetlabs/puppet/hiera.yaml\n",
                                 "cp somecompanytest/scripts/webapp.service /usr/lib/systemd/system/webapp.service\n",
                                 "cd /home/centos/\n",
-                                "/usr/local/bin/puppet apply site.pp",
-                                "'",
-                                {
-                                    "Ref":"WaitConditionHandle"
-                                },
-                                "'",
+                                "/usr/local/bin/puppet apply site.pp\n",
                                 " 2>&1 >> /var/log/initial_user-data.log\n"
                             ]
                         ]
@@ -127,33 +121,11 @@
                 }
             }
         },
-        "WaitConditionHandle":{
-            "Type":"AWS::CloudFormation::WaitConditionHandle"
-        },
-        "WaitCondition":{
-            "Type":"AWS::CloudFormation::WaitCondition",
-            "DependsOn":"Instance",
-            "Properties":{
-                "Handle":{
-                    "Ref":"WaitConditionHandle"
-                },
-                "Timeout":"600"
-            }
-        }
     },
     "Outputs":{
-        "CloudInitOutput":{
-            "Description":"The data returned to the WaitConditionHandle from Cloud Init",
-            "Value":{
-                "Fn::GetAtt":[
-                      "WaitCondition",
-                    "Data"
-                ]
-            }
-        },
         "IP": {
           "Description": "Public IP to access the server",
-          "Value": { "Fn::Join": [ "", [ "http://" , { "Fn::GetAtt": [ "Instance", "PrivateIp" ] } , ":3000" ] ] }
+          "Value": { "Fn::Join": [ "", [ "http://" , { "Fn::GetAtt": [ "Instance", "PublicIp" ] } , ":3000" ] ] }
         }
     }
 }
