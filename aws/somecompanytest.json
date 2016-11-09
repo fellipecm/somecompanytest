@@ -114,7 +114,7 @@
                                 "cp somecompanytest/puppet/hiera.yaml /etc/puppetlabs/puppet/hiera.yaml\n",
                                 "cp somecompanytest/scripts/webapp.service /usr/lib/systemd/system/webapp.service\n",
                                 "cd /home/centos/\n",
-                                "/usr/local/bin/puppet apply site.pp\n",
+                                "/usr/local/bin/puppet apply site.pp",
                                 "'",
                                 {
                                     "Ref":"WaitConditionHandle"
@@ -146,7 +146,7 @@
             "Description":"The data returned to the WaitConditionHandle from Cloud Init",
             "Value":{
                 "Fn::GetAtt":[
-                    "WaitCondition",
+                      "WaitCondition",
                     "Data"
                 ]
             }

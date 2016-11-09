@@ -28,6 +28,8 @@ This a sample of an Ruby Rails environment creation and deploy using AWS CloudFo
 You may optionally fork the code from [here](https://github.com/fellipecm/webapp-demo/) and change the git clone at app-clone on puppet/site.pp
 
 ## Utilization
+### Bring up the server:
+
 1. On AWS Console open CloudFormation (CF)
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
@@ -61,6 +63,20 @@ You may optionally fork the code from [here](https://github.com/fellipecm/webapp
 9. Get the application URL at Outputs
 
    ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use08.png)
+
+### Delete the server:
+
+1. On AWS Console open CloudFormation (CF)
+
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/use01.png)
+
+2. Select the stack you have created
+
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/delete01.png)
+
+3. Select the stack you have created
+
+   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/delete02.png)
 
 ## References
 ### Sample code:
