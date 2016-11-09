@@ -22,7 +22,7 @@ This a sample of an Ruby Rails environment creation and sample application deplo
 
   ![alt tag](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/docs/images/prereqs04.png)
 
-2. Download the CF file [here](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/aws/amptest.json)
+2. Download the CF file [here](https://raw.githubusercontent.com/fellipecm/somecompanytest/master/aws/somecompanytest.json)
 
 ### Sample code:
 You may optionally fork the code from [here](https://github.com/fellipecm/webapp-demo/) and change the git clone at app-clone on puppet/site.pp
