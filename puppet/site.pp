@@ -69,8 +69,8 @@ exec { "set-env":
     #user    => centos,
     path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin',
     cwd     => "/home/centos/webapp-demo",
-    command => "rake db:migrate RAILS_ENV=development",
-    unless  => "rake db:abort_if_pending_migrations",
+    command => "bundle exec rake db:migrate RAILS_ENV=development",
+    unless  => "bundle exec rake db:abort_if_pending_migrations",
     # require => File["/home/centos/webapp-demo"],
 }
 
