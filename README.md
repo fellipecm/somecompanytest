@@ -1,6 +1,6 @@
 # somecompanytest
 ## Description
-This a sample of an Ruby Rails environment creation and deploy using AWS CloudFormation and Puppet on CentOS.
+This a sample of an Ruby Rails environment creation and sample application deploy using AWS CloudFormation and Puppet on CentOS.
 
 ## Pre-requisites
 ### AWS:
